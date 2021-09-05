@@ -22,6 +22,8 @@ app.get("/getImage", cors(corsOptions), async (request, response) => {
         return document.querySelector('.image-gallery-slides > div > div > img').src;
 	}).then(data => response.send(data._remoteObject.value))
 	  .catch(err => response.sendStatus(500));
+
+	page.close();
 });
 
 app.listen(3001);
