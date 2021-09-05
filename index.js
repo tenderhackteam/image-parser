@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require('cors');
-const rp = require('request-promise');
 const puppeteer = require('puppeteer');
 
 const app = express();
